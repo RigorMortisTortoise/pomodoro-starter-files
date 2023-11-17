@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Freshman Pomodoro Clock Demo</title>
+    <title>Pomodoro Timer </title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/csq0nwh.css">
   </head>
   <body>
+    <div class="tomato-top"><img src="tomato-top.svg"></div>
     <main class="app">
       <progress id="js-progress" value="0"></progress>
       <div class="progress-bar"></div>
@@ -40,9 +42,15 @@
           <span class="separator">:</span>
           <span id="js-seconds">00</span>
         </div>
+        <div class="timer-buttons">
         <button class="main-button" data-action="start" id="js-btn">
           Start
         </button>
+      
+        <button class="reset-button hidden" data-action="reset" id="js-btn-reset">
+          Reset
+        </button>
+      </div>
       </div>
     </main>
     <div class="hidden">
